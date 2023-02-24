@@ -5,47 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
-    <title>Título</title> <!--Es el nombre de la pestaña de la página del navegador-->
+    <title>National Geographic</title> <!--Es el nombre de la pestaña de la página del navegador-->
     <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
     <nav>
-        <img src="img/ng-logo-2fl.webp" alt="este es el logo">
-        <img src="img/ng-border.png" alt="border">
-        <a href="#">Login</a>
-        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-        <a href="https://www.nationalgeographic.com/">Logo NatGeo</a>
-        <a href="#">Newsletter</a>
-        <a href="#">Subscribe</a>
-        <a href="#">Menu</a>
-        <a href="#"><i class="fa-solid fa-angles-down"></i></a>
+        <img class="logo" src="img/ng-logo-2fl.webp" alt="Logo Natgeo">
+        <img class="logo-border" src="img/ng-border.png" alt="border">
+        <div class="NavBarList">
+            <a class="link-login" href="#">Login</a>
+            <a class="link-search" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a class="link-news" href="#">Newsletter</a>
+            <a class="link-subs" href="#">Subscribe</a>
+            <a class="link-menu" href="#">Menu</a>
+            <a class="link-angle" href="#"><i class="fa-solid fa-angles-down"></i></a>
+        </div>
     </nav>
     <header>
-        <div class="tituloprincipal">
-            <h1>Latest Stories</h1>
-            <p>Subscribe for full access to read stories from National Geographic.</p>
+        <div>
+            <h1 style="color:white; font-size: 42px; text-transform: uppercase; text-align: center;">Latest Stories</h1>
+            <p class="mainsubtitle">Subscribe for full access to read stories from National Geographic.</p>
+            <div class="border"></div>
         </div>
     </header>
     <main>
-        <div>
-            <div>
-                <img src="img/Foto1 Reina.avif" alt="reina">
-                <h3>History Magazine</h3>
-                <p>Decoder secret letters reveal plot against Queen Elizabeth</p>
-                <a href="#"><i class="fa-solid fa-bars"></i>Read</a>
+        <div class="noticias">
+            <div class="main-news">
+                
+                <img class="img-queen" src="img/Foto1 Reina.avif" alt="reina">
+                <div class="main-news-text">
+                    <h3>History Magazine</h3>
+                    <p>Decoder secret letters reveal plot against Queen Elizabeth</p>
+                    <a class="read-btn" href="#"><i class="fa-solid fa-bars"></i> Read</a>
+                </div>
+                     
             </div>
-            <div>
-                <img src="img/Foto2 slaves.avif" alt="slaves">
-                <h3>Magazine</h3>
-                <p>America’s last slave ship stole them from home. It couldn’t steal their identities.</p>
-                <a href="#"><i class="fa-solid fa-bars"></i>Read</a>
+            <!--<span> sajfghajhsg</span>-->
+            <div class="seconday-news">
+                <img class="img-slaves" src="img/Foto2 slaves.avif" alt="slaves">
+                <div class="secondary-news-text">    
+                    <h3>Magazine</h3>
+                    <p>America’s last slave ship stole them from home. It couldn’t steal their identities.</p>
+                    <a class ="read-btn" href="#"><i class="fa-solid fa-bars"></i> Read</a>
+                </div>
             </div>
-            <div>
-                <img src="img/Foto3 Elefante.webp" alt="elefante">
-                <h3>Animals</h3>
-                <p>What drives elephant poaching? It’s not greed</p>
-                <a href="#"><i class="fa-solid fa-bars"></i>Read</a>
+
+            <div class="seconday-news">
+                <img class="img-elephant" src="img/Foto3 Elefante.webp" alt="elefante">
+                <div class="secondary-news-text">
+                    <h3>Animals</h3>
+                    <p>What drives elephant poaching? It’s not greed</p>
+                    <a class="read-btn" href="#"><i class="fa-solid fa-bars"></i> Read</a>
+                </div>
             </div>
+        </div> <!--noticias-->
+        <div class="todayspick-section">
+            <h2>Today's Picks</h2>
+            <div class="border-article"></div>
+            <div class="article">
+                <a class="read-article" href="#">
+                    <img class="magazine" src="img/Map.jpg" alt="Mapa">
+                    <div class="article-text">
+                        <h4>History Magazine</h4>
+                        <p>This is ancient Greek warship ruled the Mediterranean</p>
+                    </div>
+                </a>
+            </div>
+            <div class="article">
+                <a class="read-article" href="#">
+                    <img class="travel" src="img/PuertoRico.jpeg" alt="Mapa">
+                    <div class="article-text">
+                        <h4>Travel</h4>
+                        <p>Explore the beautiful Puertoricans beach and nature.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="article">
+                <a class="read-article" href="#">
+                    <img class="Animals" src="img/Lobo.jpeg" alt="Mapa">
+                    <div class="article-text">
+                        <h4>Animals</h4>
+                        <p>How an wolf break-in change the life of a wolf called Flaco.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="article">
+                <a class="read-article" href="#">
+                    <img class="Science" src="img/Science.jpeg" alt="Mapa">
+                    <div class="article-text">
+                        <h4>Sciene Mind, Body, Wonder</h4>
+                        <p>How to take better care of your aging brian</p>
+                    </div>
+                </a>
+            </div>
+            
         </div>
     </main>
     
